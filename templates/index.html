@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}" />
+    <title>Osteo Prediction</title>
+</head>
+<body>
+    <header>
+        <div class="title-cont">
+            <span class="title">Knee Osteoarthritis Prediction</span>
+            <sub class="by">By: Hazem Ahmed</sub>
+        </div>
+        <!-- <ul> 
+            <li>Home</li>
+            <li>Idea</li>
+            <li>Design</li>
+            <li>Product</li>
+        </ul> -->
+    </header>
+    <iframe name="hidden" width="0" height="0" style="display: none;"></iframe>
+    <form action = "/predict" method="post" enctype="multipart/form-data" target="hidden" id="inp-form">   
+        <div class="actual_but">Upload file</div>
+        <input type="file" name="file" class="file_select" style="display: none; width: 0px; height: 0px;"/>   
+        <input type = "submit" value="Predict" class="sub-but">   
+    </form> 
+    <img src="">
+    <div class="img-cont"></div>
+    <div class="pred-cont"></div>
+    <script type="text/javascript" src="{{ url_for('static',filename='script.js') }}"></script>
+</body>
+</html>

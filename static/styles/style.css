@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    color: white;
+    font-family: Roboto, sans-serif;
+    margin: 0px;
+    /*   box-sizing: border-box; */
+    scroll-behavior: smooth;
+}
+
+body {
+   background: #dfe5e8;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+/*   background: linear-gradient(#000428, #004e92); */
+/*   background: linear-gradient(#434343, #000000); */
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+header {
+    width: 100vw;
+    height: 10vh;
+    background: #607d8b;
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.control {
+    padding: 0.7rem;
+    background: #404040;
+    border-radius: 50%;
+    transition: background 1s ease;
+}
+
+.control:hover {
+    background: #0d78f2;
+  } 
+
+ul {
+    list-style: none;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 50vw;
+    padding: 0px;
+    gap: 2.5vw;
+}
+
+li {
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+#inp-form { 
+    margin-top: 11vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.sub-but {
+    padding: 10px;
+    width: 100px;
+    border: none;
+    background: #4885a3;
+    transition: 1s ease;
+}
+
+.sub-but:hover {
+    background: #3b91bd;
+}
+
+.actual_but {
+    /* font-family: calibri; */
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px dashed #607d8b;
+    text-align: center;
+    background: transparent;
+    cursor: pointer;
+    color: #312f2f;
+}
+
+.img-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+/* li>a {
+    text-decoration: none;
+    transition: 1s ease;
+    color: white;
+} */
+
+li:hover {
+    color: #0d78f2;
+}
+
+.active {
+    background:#0d78f2;
+} 
+
+/* .title-cont {
+    position: absolute;
+    left: 10vw;
+} */
+
+.title {
+    font-size: 1.5rem;
+    color: black;
+}
+
+.by { 
+    font-size: 0.95rem;
+}
+
+@media only screen and (max-width: 500px) {
+    .title-cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .sub-but:hover {
+        background: #4885a3;
+    }    
+}
